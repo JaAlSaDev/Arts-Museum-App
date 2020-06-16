@@ -1,90 +1,97 @@
 # ![GA Logo](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) 
 
-# Project #2: Full Stack Application
+# Project #2: Arts Museum Applicaton
+- It is a full stack application using NodeJS and NoSQL.
 
-## Overview:
+## About Arts Muesum in General:
+- An art museum or art gallery is a building or space for the display of art, usually from the museum's own collection. It might be in public or private ownership and may be accessible to all or have restrictions in place. Although primarily concerned with visual art, art galleries are often used as a venue for other cultural exchanges and artistic activities, such as performance arts, music concerts, or poetry readings. Art museums also frequently host themed temporary exhibitions which often include items on loan from other collections.
+- In distinction to a commercial art gallery, run by an art dealer, the primary purpose of an art museum is not the sale of the items on show.
 
-You will be creating a full stack application using NodeJS and NoSQL.
+## Requirements:
 
----
+### Overall Technical Requirements:
 
-## What You've Learned
+#### Authentication Requirements
+There are three type of users: Regular User, Admin and Tour Guide.
+- Each type of users can: sign up, sign in, change password and sign out.
+- Each type of users has personal profile.
 
-By the time you submit this project, you will have covered new ground in, and reviewed, many of the big themes of the course so far:
+#### Art Items Requirements
+- Both admin user type and regular user type can:
+    - View a list of art items description in brief.
+    - View single art item's full details.
+    - Search art items by artist name and/or by year and/or by location.
+- Admin user type can:
+    - Create, edit and delete art Items.
 
-- **Command Line**: Practice interacting with the computer and navigating the filesystem from the command line.
-- **Source Control**: Manage and interact with a git repository to store changes to code.
-- **Programming Fundamentals**: Work with objects, constructors, events, while learning how to strategically solve problems and resolve errors.
-- **Web Fundamentals**: Learn how communication happens over the internet, and how to structure, style, and animate documents within a browser. Also learn how to respond to actions your users take and the data they input into the browser.
-- **Browser Applications**: Dive into CSS, and figure out how to use libraries and frameworks to get lots of style and functionality for free.
-- **Deployment**: Host a static web site in a managed hosting environment.
-- **Responsive Web Design**: Making web applications that respond to device size.
-- **Server Side Applications**: Server-side scripting is a technique used in web development which involves employing scripts on a web server which produce a response customized for each user's (client's) request to the website.
-- **Databases**: A structured set of data held in a computer, especially one that is accessible in various ways.
-- **NoSQL**: "not only SQL," database provides a mechanism for storage and retrieval of data, an alternative to traditional relational databases in which data is placed in tables. Data schema is carefully designed before the database is built.
-- **JavaScript**: JavaScript programming fundamentals including Object Oriented Programming with Classes and Inheritance.
-- **NodeJS and Express**: A web-application framework that includes everything needed to create database-backed web applications according to the Model-View-Controller (MVC) pattern.
-- **Mongodb**: A cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schema.
-- **Mongoose**: Provides a schema-based solution for object modeling with Node.js to model your Mongodb data.
----
+#### Tours Requirements
+- Both admin user type and regular user type can:
+    - View a list of tours description in brief.
+    - View single tour full details.
+    - Book and cancel Booking tours. 
+- Admin user type can:
+    - Create, edit and delete tours.
+    - Cancel regular user booking tour
 
-## Requirements
+## Simple Database Schema
+![image](https://media.git.generalassemb.ly/user/26796/files/f6d3ba00-7591-11ea-8da1-480b5736328b)
 
-### General Requirements
+## Covered Themes: 
+- Command Line
+- Source Control
+- Programming Fundamentals
+- Web Fundamentals
+- Browser Applications
+- Deployment
+- Responsive Web Design
+- Server Side Applications
+- Databases
+- NoSQL
+- HTML
+- CSS
+- JavaScript
+- NodeJS and Express
+- Mongodb
+- Mongoose
 
-- Build a web application from scratch, must be your own work.
-- Use Express framework to build your application
-- Deploy on Heroku so application is live on the web [here](https://devcenter.heroku.com/articles/deploying-nodejs)
-- Create a `README.md` file that explains your app to the world
+## Libraries Used:
+- **[JQuery](https://jquery.com)**
+- **[Bootstrap](https://www.npmjs.com/package/bootstrap)**
 
-### Technical Requirements
+## Application Deyploment:
+- Heroku [here](https://devcenter.heroku.com/articles/deploying-nodejs)
 
-#### Authentication
-- User must be able to sign up
-- User must be able to sign in
-- User must be able to change password
-- User must be able to sign out
+## Bugs and Errors: 
+- Editing Art Items Images: after adding an art item details by the admin and uploading it's image, the admin can edit the details but he can't change the old image by a new one.
+- TextArea components: the area text components used for editing art items and tours details doesn't' show the previous text but it accept new text and save it effectively on the database.
+- Upload Image Component: Doesn't work effectively as a design, after uploading an image it appears nothing uploaded, but it is actually does.
+- Tour Date Format: Date format appears too long and it needs to be fixed to a more short readable format. 
+- Page Footer Design: in some pages the footer appears up in the page. 
 
-#### 2 extra resources of your choice (other than User)
-- User must be able to create a resource
-- User must be able to edit a resource
-- User must be able to view all resources they created
-- User must be able to view a single resource they created
-- User must not be able to edit or delete other users' resources
+## Future work: 
+- Make the application responsive.
+- Enhancing the overall application design. 
+- Adding more users types.
+- Allowing admin to add more art item details.
+- Enabling admin to add more types of art items.
+- Adding in general more functionally and operations to the museum.
 
-#### Stretch Technical Goals (optional)
-
-- Make application responsive
-- Allow users to upload image files 
-- Use a CSS library like [Bootstrap](https://www.npmjs.com/package/bootstrap)
-
-### Team Requirements
-
-- Every team member must have commits contributing to the project.  
-- Pair programming is allowed and should be noted in the commit by using `@github_username` of each student pairing
-- No single student should do a majority of the commits.
-
-
-
-
-### Necessary Deliverables
-- Projects are due on Thursday, 2nd of April, 2020 at 9.00am!
-- You have to fill the [google sheet] with you name, github link and deployed link.
-- A **10 minute presentation** in which you answer the following questions:
-  - What is the application about?
-  - Is there any information you think might help us understand what you built?
-  - Demo of application
-  - What features did you include?
-    - Make sure to explain anything "new" (things that we didn't cover in class)
-  - What was the most difficult part of the project?
-  - What was your favorite part to work on?
-  - What would you like to add next?
-
----
-
-## Useful Resources
-
+## Main Resources Uesd: 
+- **[Git Documentation](https://git-scm.com/doc)**
+- **[Bootstrap Documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/)**
 - **[Git Team Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows)**
 - **[Git Team Cheatsheet](https://jameschambers.co/writing/git-team-workflow-cheatsheet/)**
 - **[nodeJS Example projects](https://github.com/sqreen/awesome-nodejs-projects)**
 - **[MongooseJS documentation](https://mongoosejs.com/docs/index.html)**
+
+## Channel of Collaboration Used by Team Members: 
+- GitHub
+- Slack
+- Zoom 
+- Discord
+- WhatsApp
+
+## Development Team Members: 
+- Jaber Alsalamah
+- Lujen Babunji
+- Ola AlYamani
